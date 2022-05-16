@@ -7,9 +7,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: lightblue;
   overflow: hidden;
 }
@@ -20,9 +18,7 @@ body .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 4em;
 }
 
@@ -47,11 +43,7 @@ body .wrapper .slider .mems-slider {
   display: flex;
   margin-left: 0%;
   margin-bottom: 3em;
-  -webkit-transition: all .6s ease;
   transition: all .6s ease;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: slider;
 }
 
@@ -63,10 +55,7 @@ body .wrapper .slider .mems-slider .mems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all .6s ease;
+  justify-content: center;
   transition: all .6s ease;
   overflow: hidden;
 }
@@ -76,8 +65,6 @@ body .wrapper .text-control {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: text;
   padding-left: 6%;
 }
@@ -100,21 +87,15 @@ body .wrapper .text-control .text-wrapper .texts .mems-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all .7s ease;
+  justify-content: center;
   transition: all .7s ease;
 }
 
 body .wrapper .text-control .controls-slider {
   width: 50%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+ justify-content: flex-end;
 }
 
 #text1, #text2, #text3, #text4, #text5 {
@@ -132,32 +113,22 @@ body .wrapper .text-control .controls-slider {
 }
 
 .point1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: control1;
 }
 
 .point2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: control2;
 }
 
 .point3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
   grid-area: control3;
 }
 
 .point4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
   grid-area: control4;
 }
 
 .point5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
   grid-area: control5;
 }
 
@@ -174,9 +145,7 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   cursor: pointer;
   border-radius: 90%;
 }
@@ -188,7 +157,6 @@ label span {
   display: block;
   background-color: #00aaff;
   border: 0.2em solid #00aaff;
-  -webkit-transition: .7s;
   transition: .7s;
 }
 
@@ -207,10 +175,8 @@ label:active span {
 
 label:hover {
   opacity: 1;
-  -webkit-transition: .7s;
   transition: .7s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 input {
