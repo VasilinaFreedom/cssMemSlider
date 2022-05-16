@@ -16,6 +16,7 @@ body {
 
 body .wrapper {
   width: 70%;
+  /* height: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,11 +32,12 @@ body .wrapper .slider {
   overflow: hidden;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% (7%)[5];
-      grid-template-columns: 65% repeat(5, 7%);
-  -ms-grid-rows: 90% 10%;
-      grid-template-rows: 90% 10%;
-      grid-template-areas: "slider slider slider slider slider slider" "text control1 control2 control3 control4 control5";
+  grid-template-columns: 55% repeat(5,9%);
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+      "slider slider slider slider slider slider"
+      "text control1 control2 control3 control4 control5";
+
 }
 
 body .wrapper .slider .mems-slider {
@@ -66,6 +68,7 @@ body .wrapper .slider .mems-slider .mems {
           justify-content: center;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
+  overflow: hidden;
 }
 
 body .wrapper .text-control {
@@ -76,6 +79,7 @@ body .wrapper .text-control {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
+  padding-left: 6%;
 }
 
 body .wrapper .text-control .text-wrapper {
@@ -115,14 +119,15 @@ body .wrapper .text-control .controls-slider {
 
 #text1, #text2, #text3, #text4, #text5 {
   width: 100%;
+  font-size: 1em;
   font-style: italic;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #f7fbff;
 }
 
 .point1, .point2, .point3, .point4, .point5 {
-  opacity: .7;
-  width: 3em;
+  opacity: .45;
+  width: 100%;
   height: 3em;
 }
 
@@ -157,8 +162,7 @@ body .wrapper .text-control .controls-slider {
 }
 
 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* width: 80%; */
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -252,4 +256,31 @@ input {
 #point5:checked ~ .text-control > .text-wrapper > .texts > .mems-text {
   margin-left: -400%;
 }
-/*# sourceMappingURL=index.css.map */
+
+@media (max-width: 650px) {
+  body .wrapper{
+    height: 100%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .slider {
+    width: 85%;
+    height: 60%;
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 70% 10% 20%;
+    grid-template-areas:
+        "slider slider slider slider slider"
+        "control1 control2 control3 control4 control5"
+        "text text text text text";
+  }
+  body .wrapper .text-control .text-wrapper{
+    text-align: center;
+  }
+  
+}
+
