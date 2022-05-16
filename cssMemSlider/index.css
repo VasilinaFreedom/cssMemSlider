@@ -42,7 +42,7 @@ body .wrapper .slider .mems-slider {
   display: -ms-flexbox;
   display: flex;
   margin-left: 0%;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   transition: all .6s ease;
   grid-area: slider;
 }
